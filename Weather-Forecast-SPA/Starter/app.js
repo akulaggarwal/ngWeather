@@ -31,6 +31,6 @@ myApp.controller('mainController', ['$scope', 'cityService', function($scope, ci
     
 }])
 
-myApp.controller('weatherController', ['$scope', 'cityService', function($scope, cityService) {
+myApp.controller('weatherController', ['$scope', 'cityService', '$resource', function($scope, cityService, $resource) {
     $scope.cityName = cityService.cityName;
 }])
