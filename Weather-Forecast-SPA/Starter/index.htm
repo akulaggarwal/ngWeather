@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html ng-app='app' lang="en-us">
     <head>
         <title>AngularJS Weather Forecast SPA</title>
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -31,13 +31,14 @@
 
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href='#/reporting'> Reporting</a></li>
 				</ul>
 			</div>
 			</nav>
 		</header>
 
         <div class="container">
-
+            <div ng-view></div>
 
 		</div>
 
